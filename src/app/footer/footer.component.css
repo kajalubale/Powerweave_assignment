@@ -1,0 +1,83 @@
+
+.footer h4 {
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .footer a:hover {
+    color: #EE4466;
+  }
+  
+  .footer-rowtop {
+    padding: 40px 20px;
+    color: #888888;
+  }
+  
+  .footer-rowbottom {
+    padding: 0px 20px;
+    /* background: #F3F3F3; */
+    color: #ffffff;
+    Padding-bottom:10px;
+  }
+  
+  .footer-links {
+    line-height: 24px;
+  }
+  
+  .footer-social-icons {
+    padding-right: 15px;
+  }
+  
+  /* CSS for Form Field */
+  /* ------------------------------- */
+  
+  input[type=text], select {
+    width: 70%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  div .forrm {
+    border-radius: 5px;
+  }
+  .cart-btn{
+    margin-top:10px;
+    font-size:16px;
+    padding:2px;
+    font-family: 'Oswald', sans-serif;
+  }
+/* 
+  @media (min-width: 1440px){
+    .footer h4{
+      text-align: left;
+    }
+    .footer{
+      text-align: left;
+    }
+  }
+  */
+  /* ------------------------------- */
+  
+  @media (min-width: 320px) and (max-width : 768px) {
+    .footer-links  h4{
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-links  {
+      text-align: center;
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,120 @@
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner box1">
+                        <div class="item active">
+                            <img src="../../images/1.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/3.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/4.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/1.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/3.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="../../images/4.jpg">
+                        </div>
+                    </div>
+                   
+                </div> 
+            <div class="clearfix">
+                <div id="thumbcarousel" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="../../images/one.jpg"></div>
+                            <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="../../images/two.jpg"> </div>
+                            <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="../../images/three.jpg"></div>
+                            <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="../../images/four.jpg"></div>
+                        </div><!-- /item -->
+                        <div class="item">
+                            <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="../../images/one.jpg"></div>
+                            <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="../../images/two.jpg"></div>
+                            <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="../../images/three.jpg"></div>
+                            <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="../../images/four.jpg"></div>
+                        </div><!-- /item -->
+                       
+                    </div><!-- /carousel-inner -->
+                    <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div> <!-- /thumbcarousel -->
+            </div><!-- /clearfix -->
+            </div> <!-- /col-sm-6 -->
+            <div class="col-lg-6 col-sm-12">
+                <div class="row product-details">
+                    <div class="col-lg-12">
+                    <h1>Lorem Ipsum Shoes</h1>
+                    <h4>#123456</h4>
+                    </div>
+                
+                    <div class="col-lg-12 product-info pt-2">
+                    <!-- <h5>Product Detail</h5> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla consequuntur animi doloremque laboriosam alias omnis velit inventore provident delectus aut fuga maiores quam minus ratione architecto, ducimus ad molestiae! Porro velit ullam cum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas at delectus illum numquam similique voluptatum quaerat quod. Deleniti, tempore minima reprehenderit id culpa placeat quibusdam accusantium repellat assumenda. Similique, nostrum odit. Omnis, nulla nihil.</p>
+                   
+                    </div>
+                    <div class="col-lg-12 size-cat">
+                        <h4>Select Size</h4>
+                    </div>
+                    <div class="col-lg-12 shoe-size " >
+        
+                         <button class="btn btn-dark btn-sm" >6</button>
+                         <button class="btn btn-outline-dark btn-sm">7</button>
+                        <button class="btn btn-outline-dark btn-sm">8</button>
+                        <button class="btn btn-outline-dark btn-sm">9</button>
+                        <button class="btn btn-outline-dark btn-sm">10</button>
+                       <button class="btn btn-outline-dark btn-sm">11</button>
+                    </div>
+
+                    <div class="col-lg-12 shoe-price">
+                        <div class="col-lg-6 shoe-price-1">${{counter}}</div>
+                        <div class="col-lg-6 shoe-price-2 text-right" >
+                            <button type="button" class="btn btn-danger shop-button cart-btn">Buy Now</button>
+                            <button type="button" class="btn btn-danger shop-button cart-btn">Add to Cart</button>
+                            
+                        </div>
+                         
+                        <!-- <div class="product_fav"><i class="fas fa-heart"></i></div> -->
+                    </div>
+
+
+                  
+                    </div>
+            </div> <!-- /col-sm-6 -->
+          </div> <!-- /row -->
+          
+        </div> <!-- /container -->
+
+        <script src="angular.min.js"></script>
+        <script>
+            angular.module("CounterApp", [])
+                .controller("CounterController", function($scope) {
+                    $scope.counter = 0;
+                    $scope.decrement = function() {
+                        $scope.counter--;
+                    };
+            })
+            </script>
+        <!-- <div ng-app>
+            <button ng-init="counter = 0" ng-click="counter = counter + 1">Increment</button>
+            {{counter}}
+        </div> -->
+        
